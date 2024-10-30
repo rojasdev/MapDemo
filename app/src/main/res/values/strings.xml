@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">API Demo</string>
+    <string name="app_map">Map</string>
+    <string name="app_custom_marker">Custom Marker</string>
+    <string name="app_points">Points</string>
+    <string name="app_plot">Plot</string>
+</resources>

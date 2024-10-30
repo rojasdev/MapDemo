@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/app_map" />
+    <item
+        android:id="@+id/nav_custom_marker"
+        android:icon="@drawable/ic_map"
+        android:title="@string/app_custom_marker" />
+    <item
+        android:id="@+id/nav_points"
+        android:icon="@drawable/ic_map"
+        android:title="@string/app_points" />
+    <item
+        android:id="@+id/nav_plot"
+        android:icon="@drawable/ic_map"
+        android:title="@string/app_plot" />
+</menu>
