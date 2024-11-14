@@ -40,7 +40,7 @@ public class MapWeatherFragment extends Fragment {
     private MapView mapView;
     private MyLocationNewOverlay locationOverlay;
     private Marker weatherMarker;
-    private final String WEATHER_API_KEY = "0deeb0067171ef5ce14d4ad4e8886957"; //BuildConfig.API_KEY;
+    private final String WEATHER_API_KEY = BuildConfig.API_KEY;
     private final String WEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
     private final ActivityResultLauncher<String[]> locationPermissionLauncher =

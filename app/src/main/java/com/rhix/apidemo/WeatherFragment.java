@@ -23,7 +23,7 @@ public class WeatherFragment extends Fragment {
     private TextView temperatureTextView;
     private TextView descriptionTextView;
 
-    private final String API_KEY = "0deeb0067171ef5ce14d4ad4e8886957";
+    private final String API_KEY = BuildConfig.API_KEY;
     private final String BASE_URL = "https://api.openweathermap.org/data/2.5/";
 
     @Nullable

@@ -2,10 +2,23 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+// Load the API key from local.properties
+def apiKey = ""
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    Properties properties = new Properties()
+    properties.load(localPropertiesFile.newDataInputStream())
+    apiKey = properties.getProperty("API_KEY", "")
+}
+
 android {
     namespace 'com.rhix.apidemo'
     compileSdk 34
 
+    buildFeatures {
+        buildConfig = true
+    }
+    
     defaultConfig {
         applicationId "com.rhix.apidemo"
         minSdk 24
@@ -14,6 +27,8 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
+        // Pass the API key to BuildConfig
+        buildConfigField 'String', 'API_KEY', "\"${apiKey}\""
     }
 
     buildTypes {
@@ -29,7 +44,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
