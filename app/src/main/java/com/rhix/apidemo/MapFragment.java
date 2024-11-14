@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,12 +19,9 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import org.osmdroid.config.Configuration;
-import org.osmdroid.library.BuildConfig;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
 import org.osmdroid.views.MapView;
-import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
-import org.osmdroid.views.overlay.mylocation.IMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
 
 public class MapFragment extends Fragment {
@@ -64,7 +60,7 @@ public class MapFragment extends Fragment {
 
         // Set initial map position and zoom level
         mapView.getController().setZoom(18.0);
-        GeoPoint startPoint = new GeoPoint(40.748817, -73.985428);  // Example: New York City
+        GeoPoint startPoint = new GeoPoint(10.53724, 122.83202);  // Example: New York City
         mapView.getController().setCenter(startPoint);
 
         // Add MyLocation overlay for showing user location

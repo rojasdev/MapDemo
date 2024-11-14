@@ -4,4 +4,6 @@
     <string name="app_custom_marker">Custom Marker</string>
     <string name="app_points">Points</string>
     <string name="app_plot">Plot</string>
+    <string name="app_weather">Weather 1</string>
+    <string name="app_cloud">Weather 2</string>
 </resources>

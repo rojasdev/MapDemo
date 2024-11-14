@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                     selectedFragment = new MapPointsFragment();
                 }else if(itemId == R.id.nav_plot){
                     selectedFragment = new MapPlotFragment();
+                }else if(itemId == R.id.nav_cloud){
+                    selectedFragment = new MapWeatherFragment();
                 }
 
                 if (selectedFragment != null) {

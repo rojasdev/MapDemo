@@ -64,7 +64,7 @@ public class MapCustomMarkerFragment extends Fragment {
         mapView.setMultiTouchControls(true);
 
         // Set initial map position and zoom level
-        GeoPoint startPoint = new GeoPoint(40.748817, -73.985428);  // Example: New York City
+        GeoPoint startPoint = new GeoPoint(10.53724, 122.83202);  // Example: New York City
         mapView.getController().setCenter(startPoint);
         mapView.getController().setZoom(18.0);
 
@@ -75,7 +75,7 @@ public class MapCustomMarkerFragment extends Fragment {
         mapView.getOverlays().add(locationOverlay);
 
         // Initialize and add the custom marker
-        //customMarker = addCustomMarker(startPoint); // Add a custom marker at the starting point
+        customMarker = addCustomMarker(startPoint); // Add a custom marker at the starting point
 
         // Request location permission
         requestLocationPermission();

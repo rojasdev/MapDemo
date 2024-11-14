@@ -91,12 +91,22 @@ public class MapPlotFragment extends Fragment {
 
     private void addMarkersToMap() {
         GeoPoint[] points = new GeoPoint[]{
+                new GeoPoint(10.679661456360577, 122.96088446926933),
+                new GeoPoint(10.680528171358237, 122.96263178591225),
+                new GeoPoint(10.678683980411808, 122.96473349189357),
+                new GeoPoint(10.677468595948623, 122.96316727417242),
+                new GeoPoint(10.677434749405863, 122.96284656472892),
+                new GeoPoint(10.677507066175139, 122.96217089109979),
+                new GeoPoint(10.67777500620726, 122.96120092033692),
+                new GeoPoint(10.678230880119218, 122.96054658923967),
+                new GeoPoint(10.679661456360577, 122.96088446926933)
+                /*
                 new GeoPoint(10.668328, 122.958444),
-                //new GeoPoint(10.674155, 122.961091),
-                //new GeoPoint(10.675039, 122.961242),
-                //new GeoPoint(10.675847, 122.961027),
-                //new GeoPoint(10.683639, 122.957072),
-                new GeoPoint(10.683985, 122.956504)
+                new GeoPoint(10.674155, 122.961091),
+                new GeoPoint(10.675039, 122.961242),
+                new GeoPoint(10.675847, 122.961027),
+                new GeoPoint(10.683639, 122.957072),
+                new GeoPoint(10.683985, 122.956504)*/
         };
 
         for (GeoPoint point : points) {
@@ -111,12 +121,15 @@ public class MapPlotFragment extends Fragment {
 
     private void drawLineBetweenPoints() {
         List<GeoPoint> points = Arrays.asList(
-                new GeoPoint(10.668328, 122.958444),
-                new GeoPoint(10.674155, 122.961091),
-                new GeoPoint(10.675039, 122.961242),
-                new GeoPoint(10.675847, 122.961027),
-                new GeoPoint(10.683639, 122.957072),
-                new GeoPoint(10.683985, 122.956504)
+                new GeoPoint(10.679661456360577, 122.96088446926933),
+                new GeoPoint(10.680528171358237, 122.96263178591225),
+                new GeoPoint(10.678683980411808, 122.96473349189357),
+                new GeoPoint(10.677468595948623, 122.96316727417242),
+                new GeoPoint(10.677434749405863, 122.96284656472892),
+                new GeoPoint(10.677507066175139, 122.96217089109979),
+                new GeoPoint(10.67777500620726, 122.96120092033692),
+                new GeoPoint(10.678230880119218, 122.96054658923967),
+                new GeoPoint(10.679661456360577, 122.96088446926933)
         );
 
         // Create a Polyline and set the points
